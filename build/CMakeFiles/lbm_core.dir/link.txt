@@ -1,0 +1,2 @@
+/usr/bin/ar qc liblbm_core.a CMakeFiles/lbm_core.dir/src/lbm.cpp.o CMakeFiles/lbm_core.dir/src/serial_backend.cpp.o CMakeFiles/lbm_core.dir/src/stb_image_write_impl.cpp.o CMakeFiles/lbm_core.dir/src/openmp_backend.cpp.o
+/usr/bin/ranlib liblbm_core.a

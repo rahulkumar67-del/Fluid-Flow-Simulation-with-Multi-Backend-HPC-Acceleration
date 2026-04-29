@@ -1,0 +1,4 @@
+/mnt/c/Users/rawat/Desktop/HPSC PROJECT/Fluid-Flow-Simulation-with-Multi-Backend-HPC-Acceleration/build/CMakeFiles/lbm_core.dir
+/mnt/c/Users/rawat/Desktop/HPSC PROJECT/Fluid-Flow-Simulation-with-Multi-Backend-HPC-Acceleration/build/CMakeFiles/lbm_sim.dir
+/mnt/c/Users/rawat/Desktop/HPSC PROJECT/Fluid-Flow-Simulation-with-Multi-Backend-HPC-Acceleration/build/CMakeFiles/edit_cache.dir
+/mnt/c/Users/rawat/Desktop/HPSC PROJECT/Fluid-Flow-Simulation-with-Multi-Backend-HPC-Acceleration/build/CMakeFiles/rebuild_cache.dir

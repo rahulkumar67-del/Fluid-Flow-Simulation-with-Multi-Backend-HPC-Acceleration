@@ -1,0 +1,3 @@
+backend,case,nx,ny,steps,reynolds,elapsed_seconds,mlups,final_l2,communication_seconds
+serial,cavity,128,128,100,100,1.274374,1.285650,0.000000e+00,0.000000
+serial,cylinder,256,128,1500,100,37.694301,1.303964,2.751342e-02,0.000000
