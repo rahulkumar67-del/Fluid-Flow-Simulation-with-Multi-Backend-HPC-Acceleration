@@ -1,0 +1,96 @@
+\relax 
+\citation{chen1998}
+\citation{succi2001}
+\citation{bgk1954}
+\citation{openmp2018}
+\citation{bgk1954}
+\@writefile{toc}{\contentsline {section}{\numberline {I}Introduction}{1}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {II}Mathematical Formulation}{1}{}\protected@file@percent }
+\newlabel{sec:math}{{II}{1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {II-A}}The Lattice Boltzmann Equation}{1}{}\protected@file@percent }
+\newlabel{eq:lbe}{{1}{1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {II-B}}D2Q9 Velocity Model}{1}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {II-C}}Equilibrium Distribution}{1}{}\protected@file@percent }
+\newlabel{eq:feq}{{3}{1}}
+\newlabel{eq:macro}{{4}{1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {II-D}}Viscosity and Reynolds Number}{1}{}\protected@file@percent }
+\newlabel{eq:re}{{5}{1}}
+\@writefile{toc}{\contentsline {section}{\numberline {III}Numerical Algorithm}{1}{}\protected@file@percent }
+\newlabel{sec:algo}{{III}{1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-A}}Collision--Streaming Decomposition}{1}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{\numberline {\mbox  {III-A}0a}Collision}{1}{}\protected@file@percent }
+\newlabel{eq:collide}{{6}{1}}
+\citation{ghia1982}
+\citation{ghia1982}
+\@writefile{lot}{\contentsline {table}{\numberline {I}{\ignorespaces Source File Organisation}}{2}{}\protected@file@percent }
+\newlabel{tab:files}{{I}{2}}
+\@writefile{toc}{\contentsline {paragraph}{\numberline {\mbox  {III-A}0b}Streaming}{2}{}\protected@file@percent }
+\newlabel{eq:stream}{{7}{2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-B}}Boundary Conditions}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{\numberline {\mbox  {III-B}0a}No-slip walls (bounce-back)}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{\numberline {\mbox  {III-B}0b}Moving lid (cavity)}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{\numberline {\mbox  {III-B}0c}Inlet/outlet (cylinder)}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-C}}Convergence Criterion}{2}{}\protected@file@percent }
+\newlabel{eq:l2}{{8}{2}}
+\@writefile{toc}{\contentsline {section}{\numberline {IV}Implementation}{2}{}\protected@file@percent }
+\newlabel{sec:impl}{{IV}{2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-A}}Code Architecture}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-B}}Data Layout}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-C}}Serial Backend}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-D}}OpenMP Backend}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-E}}MPI Backend}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-F}}Build System}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {V}Test Cases}{2}{}\protected@file@percent }
+\newlabel{sec:cases}{{V}{2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-A}}Lid-Driven Cavity}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-B}}Flow Past a Circular Cylinder}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-C}}Reynolds Number Effects}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {VI}Verification}{2}{}\protected@file@percent }
+\newlabel{sec:verify}{{VI}{2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VI-A}}Grid Convergence Study}{2}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Lid-driven cavity velocity magnitude field at Re\nobreakspace  {}=\nobreakspace  {}100 ($256\times 256$ grid). Red indicates high velocity near the moving lid; blue indicates near-zero velocity in the core and corners.}}{3}{}\protected@file@percent }
+\newlabel{fig:cavity}{{1}{3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Flow past cylinder velocity field at Re\nobreakspace  {}=\nobreakspace  {}100 ($256\times 128$ grid). The wake structure behind the cylinder is clearly visible.}}{3}{}\protected@file@percent }
+\newlabel{fig:cylinder}{{2}{3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VI-B}}Ghia\nobreakspace  {}et\nobreakspace  {}al.\ Benchmark}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VI-C}}Cross-Backend Consistency}{3}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Velocity fields at Re\nobreakspace  {}=\nobreakspace  {}100 (left) and Re\nobreakspace  {}=\nobreakspace  {}400 (right) for cavity (top) and cylinder (bottom) cases.}}{3}{}\protected@file@percent }
+\newlabel{fig:reynolds}{{3}{3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Grid convergence: final L2 error vs.\ grid size for the cavity case (Re\nobreakspace  {}=\nobreakspace  {}100, 5000 steps). Reference slopes for first- and second-order convergence are shown.}}{3}{}\protected@file@percent }
+\newlabel{fig:convergence}{{4}{3}}
+\@writefile{toc}{\contentsline {section}{\numberline {VII}Performance Analysis}{3}{}\protected@file@percent }
+\newlabel{sec:perf}{{VII}{3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VII-A}}Experimental Setup}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VII-B}}Performance Metrics}{3}{}\protected@file@percent }
+\newlabel{eq:metrics}{{10}{3}}
+\newlabel{eq:mlups}{{11}{3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VII-C}}Elapsed Time Comparison}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VII-D}}MLUPS Throughput}{3}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Elapsed time comparison: serial vs.\ OpenMP (1--8 threads) vs.\ MPI for the cavity case (Re\nobreakspace  {}=\nobreakspace  {}100, 2000 steps).}}{4}{}\protected@file@percent }
+\newlabel{fig:elapsed}{{5}{4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces MLUPS throughput comparison across backends and grid sizes.}}{4}{}\protected@file@percent }
+\newlabel{fig:mlups}{{6}{4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces OpenMP speedup $S(p)$ and efficiency $E(p)$ vs.\ thread count for cavity flow at multiple grid sizes. Dashed line indicates ideal linear scaling.}}{4}{}\protected@file@percent }
+\newlabel{fig:speedup}{{7}{4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VII-E}}Speedup and Efficiency}{4}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Serial runtime vs.\ grid size. The dashed reference line has slope\nobreakspace  {}2, confirming O($N^2$) scaling with total node count.}}{4}{}\protected@file@percent }
+\newlabel{fig:gridscale}{{8}{4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Flow past cylinder: elapsed time comparison across backends.}}{4}{}\protected@file@percent }
+\newlabel{fig:cylperf}{{9}{4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VII-F}}Grid Scaling}{4}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VII-G}}Cylinder Flow Performance}{4}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VII-H}}Peak Performance}{4}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VII-I}}Amdahl's Law Analysis}{4}{}\protected@file@percent }
+\bibcite{chen1998}{1}
+\bibcite{succi2001}{2}
+\bibcite{bgk1954}{3}
+\bibcite{ghia1982}{4}
+\bibcite{openmp2018}{5}
+\bibcite{kruger2017}{6}
+\bibcite{mohamad2011}{7}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Peak MLUPS achieved by each backend across all configurations.}}{5}{}\protected@file@percent }
+\newlabel{fig:peak}{{10}{5}}
+\newlabel{eq:amdahl}{{12}{5}}
+\@writefile{toc}{\contentsline {section}{\numberline {VIII}Discussion and Conclusions}{5}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{References}{5}{}\protected@file@percent }
+\gdef \@abspage@last{5}
